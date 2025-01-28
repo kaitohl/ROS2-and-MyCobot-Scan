@@ -1,0 +1,5 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+    mycobot_controller: # Adjust controller name
+      type: joint_trajectory_controller/JointTrajectoryController

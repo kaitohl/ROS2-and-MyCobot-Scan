@@ -1,0 +1,6 @@
+Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake /home/robotics/ros2_ws_scan/src/fmt -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/FMT
+Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake /home/robotics/ros2_ws_scan/src/fmt -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/FMT
+Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/FMT -- -j16 -l16
+Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/FMT -- -j16 -l16
+Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/FMT
+Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/FMT

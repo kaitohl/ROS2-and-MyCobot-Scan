@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/no_discard.dir/no_discard.cpp.o -o no_discard  -lfmt 

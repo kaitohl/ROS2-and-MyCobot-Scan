@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/validate_tests.dir/validate_tests.cpp.o -o validate_tests  ../gtest/libgtest_main.a ../gtest/libgtest.a -pthread -lfmt 

@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found fp: 0.0.1 (/home/robotics/ros2_ws_scan/install/fp/share/fp/cmake)
+-- Found serial: 1.2.1 (/home/robotics/ros2_ws_scan/install/serial/share/serial/cmake)
+-- Found catch2: 2.13.8 (/home/robotics/ros2_ws_scan/install/catch2/share/catch2/cmake)
+-- Found ament_cmake_catch2: 1.2.1 (/opt/ros/humble/share/ament_cmake_catch2/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/robotics/ros2_ws_scan/build/mycobot
+[ 41%] [32mBuilding CXX object CMakeFiles/mycobot.dir/src/command.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mycobot.dir/src/mycobot.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mycobot.dir/src/serialize.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mycobot.dir/src/process_received.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mycobot.dir/src/detect.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libmycobot.a[0m
+[ 50%] Built target mycobot
+[ 58%] [32mBuilding CXX object CMakeFiles/wiggle.dir/bringup/wiggle.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_mycobot.dir/test/main.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_mycobot.dir/test/test_process_received.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/test_mycobot.dir/test/test_serialize.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable wiggle[0m
+[ 91%] Built target wiggle
+[100%] [32m[1mLinking CXX executable test_mycobot[0m
+[100%] Built target test_mycobot
+-- Install configuration: ""
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/mycobot.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/serialize.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/command.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/process_received.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/protocol_code.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/include/mycobot/detect.hpp
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/lib/libmycobot.a
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/bin/wiggle
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/library_path.sh
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/library_path.dsv
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/ament_index/resource_index/package_run_dependencies/mycobot
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/ament_index/resource_index/parent_prefix_path/mycobot
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/ament_prefix_path.sh
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/ament_prefix_path.dsv
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/path.sh
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/environment/path.dsv
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/local_setup.bash
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/local_setup.sh
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/local_setup.zsh
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/local_setup.dsv
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/package.dsv
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/ament_index/resource_index/packages/mycobot
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/export_mycobotExport.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/export_mycobotExport-noconfig.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/mycobotConfig.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/cmake/mycobotConfig-version.cmake
+-- Installing: /home/robotics/ros2_ws_scan/install/mycobot/share/mycobot/package.xml

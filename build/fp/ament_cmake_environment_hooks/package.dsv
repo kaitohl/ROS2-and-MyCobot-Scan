@@ -1,0 +1,4 @@
+source;share/fp/local_setup.bash
+source;share/fp/local_setup.dsv
+source;share/fp/local_setup.sh
+source;share/fp/local_setup.zsh

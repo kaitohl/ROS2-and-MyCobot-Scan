@@ -1,0 +1,12 @@
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/uninstall.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/mycobot_uninstall.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/mycobot.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/wiggle.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/test_mycobot.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/test.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/edit_cache.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/rebuild_cache.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/list_install_components.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/install.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/install/local.dir
+/home/robotics/ros2_ws_scan/build/mycobot/CMakeFiles/install/strip.dir

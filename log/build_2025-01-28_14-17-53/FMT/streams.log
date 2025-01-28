@@ -1,0 +1,142 @@
+[0.022s] Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake /home/robotics/ros2_ws_scan/src/fmt -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/FMT
+[0.024s] -- CMake version: 3.22.1
+[0.068s] -- The CXX compiler identification is GNU 11.4.0
+[0.072s] -- Detecting CXX compiler ABI info
+[0.139s] -- Detecting CXX compiler ABI info - done
+[0.143s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.143s] -- Detecting CXX compile features
+[0.144s] -- Detecting CXX compile features - done
+[0.146s] -- {fmt} version: 11.0.1
+[0.146s] -- Build type: Release
+[0.149s] -- Target 'doc' disabled because doxygen not found
+[0.150s] -- Looking for C++ include pthread.h
+[0.216s] -- Looking for C++ include pthread.h - found
+[0.216s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.284s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.284s] -- Found Threads: TRUE  
+[0.286s] -- Looking for strptime
+[0.358s] -- Looking for strptime - found
+[0.390s] -- FMT_PEDANTIC: OFF
+[0.394s] -- Configuring done
+[0.417s] -- Generating done
+[0.419s] -- Build files have been written to: /home/robotics/ros2_ws_scan/build/FMT
+[0.422s] Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake /home/robotics/ros2_ws_scan/src/fmt -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/FMT
+[0.424s] Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/FMT -- -j16 -l16
+[0.462s] [  2%] [32mBuilding CXX object CMakeFiles/fmt.dir/src/os.cc.o[0m
+[0.462s] [  2%] [32mBuilding CXX object CMakeFiles/fmt.dir/src/format.cc.o[0m
+[0.462s] [  4%] [32mBuilding CXX object test/gtest/CMakeFiles/gtest.dir/gmock-gtest-all.cc.o[0m
+[3.414s] [  5%] [32m[1mLinking CXX static library libfmt.a[0m
+[3.472s] [  5%] Built target fmt
+[8.450s] [  7%] [32m[1mLinking CXX static library libgtest.a[0m
+[8.515s] [  7%] Built target gtest
+[8.538s] [ 12%] [32mBuilding CXX object test/CMakeFiles/compile-fp-test.dir/test-main.cc.o[0m
+[8.538s] [ 12%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/format-impl-test.cc.o[0m
+[8.538s] [ 12%] [32mBuilding CXX object test/CMakeFiles/scan-test.dir/scan-test.cc.o[0m
+[8.538s] [ 12%] [32mBuilding CXX object test/CMakeFiles/unicode-test.dir/test-main.cc.o[0m
+[8.538s] [ 14%] [32mBuilding CXX object test/CMakeFiles/test-main.dir/test-main.cc.o[0m
+[8.539s] [ 18%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/gtest-extra.cc.o[0m
+[8.539s] [ 18%] [32mBuilding CXX object test/CMakeFiles/scan-test.dir/test-main.cc.o[0m
+[8.539s] [ 18%] [32mBuilding CXX object test/CMakeFiles/unicode-test.dir/unicode-test.cc.o[0m
+[8.540s] [ 19%] [32mBuilding CXX object test/CMakeFiles/compile-fp-test.dir/compile-fp-test.cc.o[0m
+[8.540s] [ 21%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/header-only-test.cc.o[0m
+[8.541s] [ 22%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/test-main.cc.o[0m
+[8.542s] [ 23%] [32mBuilding CXX object test/CMakeFiles/scan-test.dir/gtest-extra.cc.o[0m
+[8.547s] [ 25%] [32mBuilding CXX object test/CMakeFiles/scan-test.dir/util.cc.o[0m
+[8.550s] [ 26%] [32mBuilding CXX object test/CMakeFiles/compile-fp-test.dir/gtest-extra.cc.o[0m
+[8.553s] [ 28%] [32mBuilding CXX object test/CMakeFiles/compile-fp-test.dir/util.cc.o[0m
+[8.558s] [ 29%] [32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/posix-mock-test.cc.o[0m
+[9.556s] [ 30%] [32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/__/src/format.cc.o[0m
+[9.584s] [ 32%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/util.cc.o[0m
+[9.640s] [ 33%] [32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/test-main.cc.o[0m
+[9.720s] [ 35%] [32mBuilding CXX object test/CMakeFiles/test-main.dir/gtest-extra.cc.o[0m
+[10.102s] [ 36%] [32mBuilding CXX object test/CMakeFiles/unicode-test.dir/gtest-extra.cc.o[0m
+[10.145s] [ 38%] [32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/__/src/os.cc.o[0m
+[10.922s] [ 39%] [32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/gtest-extra.cc.o[0m
+[11.472s] [ 40%] [32mBuilding CXX object test/CMakeFiles/test-main.dir/util.cc.o[0m
+[12.142s] [ 42%] [32mBuilding CXX object test/CMakeFiles/scan-test.dir/__/src/os.cc.o[0m
+[12.273s] [ 43%] [32m[1mLinking CXX static library libtest-main.a[0m
+[12.464s] [ 43%] Built target test-main
+[12.527s] [ 45%] [32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/util.cc.o[0m
+[12.911s] [ 46%] [32mBuilding CXX object test/CMakeFiles/unicode-test.dir/util.cc.o[0m
+[13.279s] [ 47%] [32mBuilding CXX object test/CMakeFiles/unicode-test.dir/__/src/os.cc.o[0m
+[13.356s] [ 49%] [32mBuilding CXX object test/CMakeFiles/compile-fp-test.dir/__/src/os.cc.o[0m
+[13.630s] [ 50%] [32mBuilding CXX object test/CMakeFiles/args-test.dir/args-test.cc.o[0m
+[14.083s] [ 52%] [32m[1mLinking CXX executable ../bin/posix-mock-test[0m
+[14.141s] [ 53%] [32mBuilding CXX object test/CMakeFiles/base-test.dir/base-test.cc.o[0m
+[14.373s] [ 53%] Built target posix-mock-test
+[14.384s] [ 54%] [32mBuilding CXX object test/CMakeFiles/assert-test.dir/assert-test.cc.o[0m
+[14.431s] [ 56%] [32mBuilding CXX object test/CMakeFiles/chrono-test.dir/chrono-test.cc.o[0m
+[14.600s] [ 57%] [32mBuilding CXX object test/CMakeFiles/color-test.dir/color-test.cc.o[0m
+[14.658s] [ 59%] [32mBuilding CXX object test/CMakeFiles/gtest-extra-test.dir/gtest-extra-test.cc.o[0m
+[14.732s] [ 60%] [32mBuilding CXX object test/CMakeFiles/format-test.dir/format-test.cc.o[0m
+[14.897s] [ 61%] [32mBuilding CXX object test/CMakeFiles/ostream-test.dir/ostream-test.cc.o[0m
+[16.312s] [ 63%] [32m[1mLinking CXX executable ../bin/assert-test[0m
+[16.348s] [ 64%] [32mBuilding CXX object test/CMakeFiles/compile-test.dir/compile-test.cc.o[0m
+[16.615s] [ 64%] Built target assert-test
+[16.669s] [ 66%] [32mBuilding CXX object test/CMakeFiles/printf-test.dir/printf-test.cc.o[0m
+[16.846s] [ 67%] [32m[1mLinking CXX executable ../bin/args-test[0m
+[16.930s] [ 69%] [32mBuilding CXX object test/CMakeFiles/ranges-test.dir/ranges-test.cc.o[0m
+[17.151s] [ 69%] Built target args-test
+[17.212s] [ 70%] [32mBuilding CXX object test/CMakeFiles/std-test.dir/std-test.cc.o[0m
+[17.719s] [ 71%] [32m[1mLinking CXX executable ../bin/format-impl-test[0m
+[17.847s] [ 73%] [32mBuilding CXX object test/CMakeFiles/xchar-test.dir/xchar-test.cc.o[0m
+[17.946s] [ 73%] Built target format-impl-test
+[17.959s] [ 74%] [32mBuilding CXX object test/CMakeFiles/ranges-test.dir/ranges-odr-test.cc.o[0m
+[18.146s] [ 76%] [32m[1mLinking CXX executable ../bin/compile-fp-test[0m
+[18.234s] [ 77%] [32m[1mLinking CXX executable ../bin/scan-test[0m
+[18.248s] [ 78%] [32mBuilding CXX object test/CMakeFiles/enforce-checks-test.dir/enforce-checks-test.cc.o[0m
+[18.326s] [ 78%] Built target compile-fp-test
+[18.386s] [ 80%] [32mBuilding CXX object test/CMakeFiles/os-test.dir/os-test.cc.o[0m
+[18.413s] [ 80%] Built target scan-test
+[18.537s] [ 81%] [32m[1mLinking CXX executable ../bin/unicode-test[0m
+[18.546s] [ 83%] [32m[1mLinking CXX executable ../bin/color-test[0m
+[18.726s] [ 83%] Built target color-test
+[18.733s] [ 83%] Built target unicode-test
+[19.912s] [ 84%] [32m[1mLinking CXX executable ../bin/gtest-extra-test[0m
+[20.070s] [ 84%] Built target gtest-extra-test
+[21.048s] [ 85%] [32m[1mLinking CXX executable ../bin/ostream-test[0m
+[21.216s] [ 85%] Built target ostream-test
+[21.979s] [ 87%] [32m[1mLinking CXX executable ../bin/os-test[0m
+[22.139s] [ 87%] Built target os-test
+[23.331s] [ 88%] [32m[1mLinking CXX executable ../bin/compile-test[0m
+[23.446s] [ 88%] Built target compile-test
+[23.731s] [ 90%] [32m[1mLinking CXX executable ../bin/enforce-checks-test[0m
+[23.822s] [ 90%] Built target enforce-checks-test
+[24.108s] [ 91%] [32m[1mLinking CXX executable ../bin/std-test[0m
+[24.219s] [ 91%] Built target std-test
+[25.375s] [ 92%] [32m[1mLinking CXX executable ../bin/ranges-test[0m
+[25.479s] [ 92%] Built target ranges-test
+[26.268s] [ 94%] [32m[1mLinking CXX executable ../bin/base-test[0m
+[26.390s] [ 94%] Built target base-test
+[28.331s] [ 95%] [32m[1mLinking CXX executable ../bin/xchar-test[0m
+[28.439s] [ 95%] Built target xchar-test
+[32.689s] [ 97%] [32m[1mLinking CXX executable ../bin/chrono-test[0m
+[32.789s] [ 97%] Built target chrono-test
+[33.529s] [ 98%] [32m[1mLinking CXX executable ../bin/format-test[0m
+[33.636s] [ 98%] Built target format-test
+[39.325s] [100%] [32m[1mLinking CXX executable ../bin/printf-test[0m
+[39.410s] [100%] Built target printf-test
+[39.421s] Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/FMT -- -j16 -l16
+[39.477s] Invoking command in '/home/robotics/ros2_ws_scan/build/FMT': /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/FMT
+[39.482s] -- Install configuration: "Release"
+[39.482s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/libfmt.a
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/args.h
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/base.h
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/chrono.h
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/color.h
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/compile.h
+[39.483s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/core.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/format.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/format-inl.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/os.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/ostream.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/printf.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/ranges.h
+[39.484s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/std.h
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/include/fmt/xchar.h
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/cmake/fmt/fmt-config.cmake
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/cmake/fmt/fmt-config-version.cmake
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/cmake/fmt/fmt-targets.cmake
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/cmake/fmt/fmt-targets-release.cmake
+[39.485s] -- Installing: /home/robotics/ros2_ws_scan/install/FMT/lib/pkgconfig/fmt.pc
+[39.487s] Invoked command in '/home/robotics/ros2_ws_scan/build/FMT' returned '0': /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/FMT

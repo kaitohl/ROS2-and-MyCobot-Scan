@@ -1,0 +1,11 @@
+prefix=/home/robotics/ros2_ws_scan/install/FMT
+exec_prefix=/home/robotics/ros2_ws_scan/install/FMT
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 11.0.1
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+

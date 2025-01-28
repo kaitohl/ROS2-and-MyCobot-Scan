@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<robot  xmlns:xacro="http://www.ros.org/wiki/xacro" name="firefighter" >
+	
+<xacro:property name="width" value=".2" />
+
+  <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+
+<material name="silver">
+  <color rgba="0.75 0.75 0.75 1.0"/>
+</material>
+
+
+
+
+
+<link name="world"/>
+
+	<!-- ****************** ROBOT CONSTANTS *******************************  -->
+	<!-- Source: https://www.elephantrobotics.com/en/mycobot280-for-arduino-specifications-en/ -->
+	<!-- Numbers are estimated when necessary -->
+	<xacro:property name="effort" value="5.0"/>
+	<xacro:property name="velocity" value="2.792527"/>
+	
+	<!-- ********** LINKS ********** -->
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+	     <!--- 0.0 0 -0.04  1.5708 3.14159-->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint1.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 0 " rpy = " 0 0 -1.5708"/>
+    </visual>
+
+    <collision>
+      <geometry>
+	     <!--- 0.0 0 -0.04  1.5708 3.14159-->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint1.stl"/>
+        </geometry>
+        <origin xyz = "0.0 0 0 " rpy = " 0 0 -1.5708"/>
+    </collision>
+
+    <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+			<mass value="0.12"/>
+			<inertia
+				ixx="0.000148" ixy="0.0" ixz="0.0"
+				iyy="0.000148" iyz="0.0"
+				izz="0.000096"/>
+		</inertial>
+
+  </link>
+
+  <link name="link1">
+
+    <visual>
+      <geometry>
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint2.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 -0.06096 " rpy = " 0 0 -1.5708"/>
+    </visual>
+
+    <collision>
+     <geometry>
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint2.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 -0.06096 " rpy = " 0 0 -1.5708"/>
+    </collision>
+
+      <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+			<mass value="0.19"/>
+			<inertia
+				ixx="0.000148" ixy="0.0" ixz="0.0"
+				iyy="0.000148" iyz="0.0"
+				izz="0.000096"/>
+		</inertial>
+
+  </link>
+
+
+  <link name="link2">
+
+    <visual>
+      <geometry>
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint3.stl"/>
+      </geometry>
+    <origin xyz = "0.0 0 0.03256 " rpy = " 0 -1.5708 0"/>
+    </visual>
+
+    <collision>
+      <geometry>
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint3.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 0.03256 " rpy = " 0 -1.5708 0"/>
+    </collision>
+
+      <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+		  	<mass value="0.16"/>
+			<inertia
+			  ixx="0.000148" ixy="0.0" ixz="0.0"
+			  iyy="0.000148" iyz="0.0"
+			  izz="0.000096"/>
+		</inertial>
+
+  </link>
+
+
+  <link name="link3">
+
+    <visual>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint4.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 0.03056 " rpy = " 0 -1.5708 0"/>
+    </visual>
+
+    <collision>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint4.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 0.03056 " rpy = " 0 -1.5708 0"/>
+    </collision>
+
+    <inertial>
+		  	<origin xyz="0 0 0.0" rpy="0 0 0"/>
+			<mass value="0.124"/>
+			<inertia
+			  	ixx="0.000103" ixy="0.0" ixz="0.0"
+			  	iyy="0.000103" iyz="0.0"
+			  	izz="0.000096"/>
+		</inertial>
+
+  </link>
+
+
+  <link name="link4">
+
+    <visual>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint5.stl"/>
+      </geometry>
+    <origin xyz = "0.0 0 -0.03356 " rpy = " -1.5708 0 0"/>
+    </visual>
+
+    <collision>
+       <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint5.stl"/>
+      </geometry>
+      <origin xyz = "0.0 0 -0.03356 " rpy = " -1.5708 0 0"/>
+    </collision>
+
+    <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+		  	<mass value="0.11"/>
+			<inertia
+			  ixx="0.000103" ixy="0.0" ixz="0.0"
+			  iyy="0.000103" iyz="0.0"
+			  izz="0.000096"/>
+		</inertial>
+  </link>
+
+
+  <link name="link5">
+
+    <visual>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint6.stl"/>
+      </geometry>
+    <origin xyz = "0 0.00 -0.038 " rpy = " 0 0 0"/>
+    </visual>
+
+    <collision>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint6.stl"/>
+      </geometry>
+    <origin xyz = "0 0.00 -0.038 " rpy = " 0 0 0"/>
+    </collision>
+
+    <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+		  	<mass value="0.0739"/>
+			<inertia
+			  ixx="0.00006649" ixy="0.0" ixz="0.0"
+			  iyy="0.00006649" iyz="0.0"
+			  izz="0.000096"/>
+		</inertial>
+  </link>
+
+
+  <link name="link5_flange">
+
+    <visual>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint7.stl"/>
+      </geometry>
+    <origin xyz = "0.0 0 -0.012 " rpy = " 0 0 0"/>
+    </visual>
+
+    <collision>
+      <geometry>
+       <!--- 0.0 0 -0.04 -->
+       <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/joint7.stl"/>
+      </geometry>
+    <origin xyz = "0.0 0 -0.012 " rpy = " 0 0 0"/>
+    </collision>
+
+     <inertial>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+		  	<mass value="0.035"/>
+		  	<inertia
+				ixx="0.0000149" ixy="0.0" ixz="0.0"
+				iyy="0.0000149" iyz="0.0"
+				izz="0.0000196"/>
+		</inertial>
+  </link>
+
+
+  <link name="holder">
+  <inertial>
+    <origin xyz="9.542063908505497e-10 4.713475046347886e-13 0.051986133375594434" rpy="0 0 0"/>
+    <mass value="2.1138978819045212e-10"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+     <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/holder.stl"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+     <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/holder.stl"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="spectrometer">
+  <inertial>
+    <origin xyz="9.614911284733845e-13 -7.7769165452601e-15 -0.07613934716557663" rpy="0 0 0"/>
+    <mass value="1.4364425990347802e-11"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.052052" rpy="0 0 0"/>
+    <geometry>
+     <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/spectrometer.stl"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.052052" rpy="0 0 0"/>
+    <geometry>
+     <mesh filename="file://$(find mycobot_description)/meshes/mycobot_280/spectrometer.stl"/>
+    </geometry>
+  </collision>
+</link>
+
+
+  <gazebo reference="base_link">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="link1">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="link2">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+<gazebo reference="link3">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="link4">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="link5">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+      <gazebo reference="link5_flange">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+
+<!-- ********** JOINTS ********** -->
+
+<!-- Attach the robot base to the world frame with no initial offset or rotation. -->
+	
+<!-- Attach the robot base to the world frame with no initial offset or rotation. -->
+	<joint name="virtual_joint" type="fixed">
+		<parent link="world"/>
+		<child link="base_link"/>
+		<origin xyz= "0 0 -0.05" rpy = "0 0 0"/>  
+	</joint>
+	
+	<!-- Define the joint name and its type as "fixed". A fixed joint 
+	means the two connected links cannot move relative to each other. -->
+
+		<joint name="base_link_to_link1" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort = "${effort}" lower = "-2.879793" upper = "2.879793" velocity = "${velocity}"/>
+		<parent link="base_link"/>
+		<child link="link1"/>
+	    <origin xyz= "0 0 0.13156" rpy = "0 0 ${pi/2}"/>  
+        <dynamics damping="0.05" friction="0.05"/>
+	</joint>
+
+	<joint name="link1_to_link2" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort = "${effort}" lower = "-2.879793" upper = "2.879793" velocity = "${velocity}"/>
+		<parent link="link1"/>
+		<child link="link2"/>
+		<origin xyz= "0 0 -0.001" rpy = "0 ${pi/2} ${-pi/2}"/>  
+        <dynamics damping="0.205" friction="0.15"/>
+	</joint>
+
+	<joint name="link2_to_link3" type="revolute">
+		<axis xyz=" 0 0 1"/>
+		<limit effort = "${effort}" lower = "-2.879793" upper = "2.879793" velocity = "${velocity}"/>
+		<parent link="link2"/>
+		<child link="link3"/>
+		<origin xyz= "-0.1104 0 0   " rpy = "0 0 0"/>
+        <dynamics damping="0.21" friction="0.41"/>
+	</joint>
+
+	
+
+	<joint name="link3_to_link4" type="revolute">
+		<axis xyz=" 0 0 1"/>
+		<limit effort = "${effort}" lower = "-2.879793" upper = "2.879793" velocity = "${velocity}"/>
+		<parent link="link3"/>
+		<child link="link4"/>
+		<origin xyz= "-0.096 0 0.06062" rpy = "0 0 ${-pi/2}"/>
+        <dynamics damping="0.10" friction="0.20"/>
+	</joint>
+		
+
+	<joint name="link4_to_link5" type="revolute">
+		<axis xyz=" 0 0 1"/>
+		<limit effort = "${effort}" lower = "-2.879793" upper = "2.879793" velocity = "${velocity}"/>
+		<parent link="link4"/>
+		<child link="link5"/>
+		<origin xyz= "0 -0.07318 0" rpy = "${pi/2} ${-pi/2} 0"/>
+        <dynamics damping="0.01" friction="0.005"/>
+	</joint>
+
+	<joint name="link5_to_link5_flange" type="revolute">
+		<axis xyz=" 0 0 1"/>
+		<limit effort = "${effort}" lower = "-3.05" upper = "3.05" velocity = "${velocity}"/>
+		<parent link="link5"/>
+		<child link="link5_flange"/>
+		<origin xyz= "0 0.0456 0" rpy = "${-pi/2} 0 0"/>
+        <dynamics damping="0.01" friction="0.005"/>
+	</joint>
+
+  <joint name="robot_to_holder" type="fixed">
+  <origin xyz="1.3e-05 0.0 1e-05" rpy="0 0 0"/>
+  <parent link="link5_flange"/>
+  <child link="holder"/>
+</joint>
+
+<joint name="holder_to_spectrometer" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="holder"/>
+  <child link="spectrometer"/>
+</joint>
+
+ <!-- ********** PLUGINS ********** -->
+    <!-- Publishes joint state information for the model which the robot_state_publisher uses to broadcast to 
+            the tf topic, the topic that keeps track of the robot's multiple coordinate frames over time -->
+    <gazebo>
+        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <update_rate>20</update_rate>
+            <joint_name>base_link_to_link1</joint_name>
+            <joint_name>link1_to_link2</joint_name>
+            <joint_name>link2_to_link3</joint_name>
+            <joint_name>link3_to_link4</joint_name>
+            <joint_name>link4_to_link5</joint_name>
+            <joint_name>link5_to_link5_flange</joint_name>
+            <joint_name>robot_to_holder</joint_name>
+            <joint_name>holder_to_spectrometer</joint_name>
+        </plugin>
+    </gazebo>
+
+    <!-- Subscribes to a JointTrajectory message from the /set_joint_trajectory topic 
+        To publish to this topic type: 
+            ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory "{header: {frame_id: base_link}, joint_names: [link1_to_link2, link2_to_link3, etc.], points: [{positions: [0.0,0.0,etc.]}]}" 
+    -->
+    <gazebo>
+        <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
+            <update_rate>20</update_rate>
+        </plugin>
+    </gazebo>
+
+</robot>

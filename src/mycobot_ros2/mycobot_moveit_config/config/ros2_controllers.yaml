@@ -1,0 +1,39 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    mycobot_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+mycobot_controller:
+  ros__parameters:
+    joints:
+      - base_link_to_link1
+      - link1_to_link2
+      - link2_to_link3
+      - link3_to_link4
+      - link4_to_link5
+      - link5_to_link5_flange
+    # The controller will expect position commands as input for each of these joints.
+    command_interfaces:
+      - position
+    
+    # Tells the controller that it should expect to receive position data as the state 
+    # feedback from the hardware interface,
+    state_interfaces:
+      - position
+
+    # If true, When set to true, the controller will not use any feedback from the system 
+    # (e.g., joint positions, velocities, efforts) to compute the control commands. 
+    open_loop_control: true
+
+    # When set to true, it allows the controller to integrate the trajectory goals it receives. 
+    # This means that if the goal trajectory only specifies positions, the controller will 
+    # numerically integrate the positions to compute the velocities and accelerations required 
+    # to follow the trajectory.
+    allow_integration_in_goal_trajectories: true

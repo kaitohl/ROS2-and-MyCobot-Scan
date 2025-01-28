@@ -1,0 +1,108 @@
+[0.021s] Invoking command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake /home/robotics/ros2_ws_scan/src/moveit2_scripts -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/moveit2_scripts
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.098s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.155s] -- Detecting C compiler ABI info - done
+[0.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.161s] -- Detecting C compile features
+[0.162s] -- Detecting C compile features - done
+[0.164s] -- Detecting CXX compiler ABI info
+[0.229s] -- Detecting CXX compiler ABI info - done
+[0.233s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.233s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.237s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.375s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.490s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.559s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.569s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.582s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.600s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.625s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.693s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.699s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.798s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.831s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.873s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.886s] -- Looking for pthread.h
+[0.956s] -- Looking for pthread.h - found
+[0.956s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.045s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.045s] -- Found Threads: TRUE  
+[1.097s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.136s] -- Found moveit_core: 2.5.6 (/opt/ros/humble/share/moveit_core/cmake)
+[1.212s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.303s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.326s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.331s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.365s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.521s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.614s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.918s] -- Found moveit_ros_planning: 2.5.6 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[1.923s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.954s] -- Found moveit_ros_planning_interface: 2.5.6 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.959s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.977s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.007s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.048s] -- Found interactive_markers: 2.3.2 (/opt/ros/humble/share/interactive_markers/cmake)
+[2.056s] -- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.091s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.202s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.202s] -- Configured cppcheck include dirs: 
+[2.202s] -- Configured cppcheck exclude dirs and/or files: 
+[2.203s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.204s] -- Added test 'lint_cmake' to check CMake code style
+[2.205s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.206s] -- Added test 'uncrustify' to check C / C++ code style
+[2.206s] -- Configured uncrustify additional arguments: 
+[2.207s] -- Added test 'xmllint' to check XML markup files
+[2.229s] -- Configuring done
+[2.277s] -- Generating done
+[2.280s] -- Build files have been written to: /home/robotics/ros2_ws_scan/build/moveit2_scripts
+[2.301s] Invoked command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake /home/robotics/ros2_ws_scan/src/moveit2_scripts -DCMAKE_INSTALL_PREFIX=/home/robotics/ros2_ws_scan/install/moveit2_scripts
+[2.303s] Invoking command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/moveit2_scripts -- -j16 -l16
+[2.352s] [ 16%] [32mBuilding CXX object CMakeFiles/test_trajectory.dir/src/test_trajectory.cpp.o[0m
+[2.354s] [ 50%] [32mBuilding CXX object CMakeFiles/test_trajectory2.dir/src/test_trajectory2.cpp.o[0m
+[2.354s] [ 50%] [32mBuilding CXX object CMakeFiles/position_publisher.dir/src/position_publisher.cpp.o[0m
+[5.297s] [ 66%] [32m[1mLinking CXX executable position_publisher[0m
+[5.433s] [ 66%] Built target position_publisher
+[6.054s] [01m[K/home/robotics/ros2_ws_scan/src/moveit2_scripts/src/test_trajectory.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.054s] [01m[K/home/robotics/ros2_ws_scan/src/moveit2_scripts/src/test_trajectory.cpp:30:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_model_group[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.054s]    30 |   const moveit::core::JointModelGroup *[01;35m[Kjoint_model_group[m[K =
+[6.054s]       |                                        [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[6.054s] [01m[K/home/robotics/ros2_ws_scan/src/moveit2_scripts/src/test_trajectory.cpp:56:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.054s]    56 |   bool [01;35m[Ksuccess[m[K =
+[6.055s]       |        [01;35m[K^~~~~~~[m[K
+[8.247s] [ 83%] [32m[1mLinking CXX executable test_trajectory[0m
+[8.610s] [ 83%] Built target test_trajectory
+[15.386s] [100%] [32m[1mLinking CXX executable test_trajectory2[0m
+[17.154s] [100%] Built target test_trajectory2
+[17.192s] Invoked command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake --build /home/robotics/ros2_ws_scan/build/moveit2_scripts -- -j16 -l16
+[17.315s] Invoking command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/moveit2_scripts
+[17.331s] -- Install configuration: ""
+[17.331s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/ament_index/resource_index/package_run_dependencies/moveit2_scripts
+[17.332s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/ament_index/resource_index/parent_prefix_path/moveit2_scripts
+[17.332s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/environment/ament_prefix_path.sh
+[17.338s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/environment/ament_prefix_path.dsv
+[17.339s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/environment/path.sh
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/environment/path.dsv
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/local_setup.bash
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/local_setup.sh
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/local_setup.zsh
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/local_setup.dsv
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/package.dsv
+[17.343s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/ament_index/resource_index/packages/moveit2_scripts
+[17.346s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/cmake/moveit2_scriptsConfig.cmake
+[17.347s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/cmake/moveit2_scriptsConfig-version.cmake
+[17.348s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/package.xml
+[17.348s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/launch
+[17.348s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/launch/test_trajectory.launch.py
+[17.348s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/launch/position_publisher.launch.py
+[17.351s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/share/moveit2_scripts/launch/test_trajectory2.launch.py
+[17.352s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/test_trajectory
+[17.352s] -- Set runtime path of "/home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/test_trajectory" to ""
+[17.352s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/test_trajectory2
+[17.357s] -- Set runtime path of "/home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/test_trajectory2" to ""
+[17.358s] -- Installing: /home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/position_publisher
+[17.364s] -- Set runtime path of "/home/robotics/ros2_ws_scan/install/moveit2_scripts/lib/moveit2_scripts/position_publisher" to ""
+[17.372s] Invoked command in '/home/robotics/ros2_ws_scan/build/moveit2_scripts' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/colcon_ws/install/ultraarm:/home/robotics/colcon_ws/install/mypalletizer_260_pi:/home/robotics/colcon_ws/install/mypalletizer_260:/home/robotics/colcon_ws/install/mypalletizer_communication:/home/robotics/colcon_ws/install/mycobot_630:/home/robotics/colcon_ws/install/mycobot_600:/home/robotics/colcon_ws/install/mycobot_320pi:/home/robotics/colcon_ws/install/mycobot_320:/home/robotics/colcon_ws/install/mycobot_280pi:/home/robotics/colcon_ws/install/mycobot_280jn:/home/robotics/colcon_ws/install/mycobot_280_x5pi:/home/robotics/colcon_ws/install/mycobot_280_x3pi:/home/robotics/colcon_ws/install/mycobot_280_arduino:/home/robotics/colcon_ws/install/mycobot_280:/home/robotics/colcon_ws/install/myarm_m750:/home/robotics/colcon_ws/install/myarm_c650:/home/robotics/colcon_ws/install/myarm_300:/home/robotics/colcon_ws/install/mycobot_communication:/home/robotics/colcon_ws/install/mecharm_pi:/home/robotics/colcon_ws/install/mecharm:/home/robotics/colcon_ws/install/mecharm_communication:/home/robotics/colcon_ws/install/mybuddy:/home/robotics/colcon_ws/install/mycobot_description:/opt/ros/humble /usr/bin/cmake --install /home/robotics/ros2_ws_scan/build/moveit2_scripts

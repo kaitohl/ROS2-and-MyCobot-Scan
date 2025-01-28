@@ -1,0 +1,14 @@
+source;share/mycobot/hook/cmake_prefix_path.ps1
+source;share/mycobot/hook/cmake_prefix_path.dsv
+source;share/mycobot/hook/cmake_prefix_path.sh
+source;share/mycobot/hook/path.ps1
+source;share/mycobot/hook/path.dsv
+source;share/mycobot/hook/path.sh
+source;share/mycobot/hook/pythonscriptspath.ps1
+source;share/mycobot/hook/pythonscriptspath.dsv
+source;share/mycobot/hook/pythonscriptspath.sh
+source;share/mycobot/local_setup.bash
+source;share/mycobot/local_setup.dsv
+source;share/mycobot/local_setup.ps1
+source;share/mycobot/local_setup.sh
+source;share/mycobot/local_setup.zsh

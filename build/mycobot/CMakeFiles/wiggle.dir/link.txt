@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/wiggle.dir/bringup/wiggle.cpp.o -o wiggle  libmycobot.a -lfmt /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1 -Wl,--as-needed /home/robotics/ros2_ws_scan/install/serial/lib/libserial.a -lrt -lpthread 

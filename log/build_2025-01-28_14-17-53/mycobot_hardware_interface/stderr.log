@@ -1,0 +1,18 @@
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mycobot::MyCobotHardwareInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:109:85:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  109 | rn_type MyCobotHardwareInterface::read([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period) {
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:109:116:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  109 | ace::read(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K) {
+      |                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mycobot::MyCobotHardwareInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:121:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  121 | n_type MyCobotHardwareInterface::write([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period) {
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
+[01m[K/home/robotics/ros2_ws_scan/src/mycobot-ros2-fix/mycobot_hardware_interface/src/hardware_interface.cpp:121:117:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  121 | ce::write(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K) {
+      |                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+

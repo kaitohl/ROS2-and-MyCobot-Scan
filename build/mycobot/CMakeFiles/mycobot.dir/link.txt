@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmycobot.a CMakeFiles/mycobot.dir/src/command.cpp.o CMakeFiles/mycobot.dir/src/detect.cpp.o CMakeFiles/mycobot.dir/src/mycobot.cpp.o CMakeFiles/mycobot.dir/src/process_received.cpp.o CMakeFiles/mycobot.dir/src/serialize.cpp.o
+/usr/bin/ranlib libmycobot.a

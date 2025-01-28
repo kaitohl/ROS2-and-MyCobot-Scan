@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mbind_tests.dir/mbind_tests.cpp.o -o mbind_tests  ../gtest/libgtest_main.a ../gtest/libgtest.a -pthread -lfmt 

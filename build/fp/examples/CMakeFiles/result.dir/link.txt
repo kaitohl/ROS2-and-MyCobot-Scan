@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/result.dir/result.cpp.o -o result  -lfmt 
